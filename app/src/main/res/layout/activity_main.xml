@@ -81,6 +81,61 @@
             android:text="÷"
             android:textSize="20sp"
             android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_exponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="÷"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="÷"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_logarithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="÷"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="÷"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_pi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="÷"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 
     <TextView
