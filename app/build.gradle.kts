@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.kotlinapp"
     compileSdk = 35
-
+    viewBinding {
+        enable = true  // Correct way to enable ViewBinding in Kotlin DSL
+    }
     defaultConfig {
         applicationId = "com.example.kotlinapp"
         minSdk = 24
