@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val a = if (aText.isNotEmpty()) aText.toDouble() else memory ?: 0.0
         val b = if (bText.isNotEmpty()) bText.toDouble() else 0.0
-
         var result = 0.0
 
         when (v?.id) {
@@ -48,7 +47,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnPi -> result = PI
             R.id.btnE -> result = E
         }
-
         memory = result
         binding.resultTv.text = "Result: $result"
     }
