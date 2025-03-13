@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
-    android:background="@drawable/background"
-    tools:context=".MainActivity">
-
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:padding="20dp"
+              android:background="@drawable/background"
+              android:paddingTop="30dp">
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Result"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
     <EditText
         android:id="@+id/et_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:padding="12dp"
-        android:background="@drawable/tex"
+        android:background="@drawable/text"
         android:hint="Enter A"
         android:textSize="18sp"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+    />
 
     <EditText
         android:id="@+id/et_b"
@@ -28,8 +38,10 @@
         android:layout_marginBottom="20dp"
         android:padding="12dp"
         android:background="@drawable/text"
-        android:hint="Enter B"
+        android:hint="Enter B (if needed)"
         android:textSize="18sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:inputType="numberDecimal"/>
 
     <LinearLayout
@@ -39,7 +51,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_add"
+            android:id="@+id/btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -50,7 +62,7 @@
             android:textColor="@android:color/white"/>
 
         <Button
-            android:id="@+id/btn_subtraction"
+            android:id="@+id/btnSubtraction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -61,7 +73,7 @@
             android:textColor="@android:color/white"/>
 
         <Button
-            android:id="@+id/btn_multiplication"
+            android:id="@+id/btnMultiplication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -72,7 +84,7 @@
             android:textColor="@android:color/white"/>
 
         <Button
-            android:id="@+id/btn_division"
+            android:id="@+id/btnDivision"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -138,15 +150,72 @@
             android:textColor="@android:color/white"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/result_tv"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Result"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:gravity="center"
-        android:textColor="@android:color/white"/>
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btnRoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="√x"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnExponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="xʸ"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="log(x)"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="π"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:background="@drawable/button"
+            android:text="e"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
 </LinearLayout>

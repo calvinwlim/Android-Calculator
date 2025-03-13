@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.kotlinapp"
     compileSdk = 35
-
+    viewBinding {
+        enable = true
+    }
     defaultConfig {
         applicationId = "com.example.kotlinapp"
         minSdk = 24
