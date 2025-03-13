@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
     private var memory: Double? = null
 
+    private var previousResult: Double? = null  // Stores the last computed result
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
